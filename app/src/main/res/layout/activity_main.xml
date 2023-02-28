@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="20dp"
+        android:autofillHints=""
+        android:hint="Enter Name" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="20dp"
+        android:autofillHints=""
+        android:hint="Enter Code" />
+
+    <EditText
+        android:id="@+id/desg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="20dp"
+        android:autofillHints=""
+        android:hint="Enter Designation" />
+
+    <EditText
+        android:id="@+id/salary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="20dp"
+        android:autofillHints=""
+        android:hint="Enter Salary" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="INSERT" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="UPDATE" />
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="SHOW" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="DELETE" />
+    </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listemp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+</LinearLayout>
